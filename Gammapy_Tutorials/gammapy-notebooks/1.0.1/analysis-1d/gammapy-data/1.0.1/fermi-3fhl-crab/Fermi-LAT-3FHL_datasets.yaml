@@ -1,0 +1,4 @@
+datasets:
+- name: Fermi-LAT
+  type: MapDataset
+  filename: Fermi-LAT-3FHL_data_Fermi-LAT.fits
