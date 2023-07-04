@@ -1,0 +1,737 @@
+
+VERITAS Analysis Summary (University of Delaware & DESY)  (version v.4.90)
+==========================================================================
+
+sequentiell analysis
+
+Reading anasum parameters from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS/ParameterFiles/ANASUM.runparameter_bllac_3.txt :
+
+* TIMEMASKFILE ANASUM.timemask_bllac3.dat
+* REGIONTOEXCLUDE 0. 0. 0.35
+* ENERGYSPECTRALINDEX 3.5
+* SKYMAPBINSIZE 0.01
+* SKYMAPBINSIZEUC 0.05
+* SKYMAPSIZEX -2. 2.
+* SKYMAPSIZEY -2. 2.
+* BRIGHTSTARCATALOGUE Hipparcos_MAG8_1997.dat
+* BRIGHTSTARBRIGHTNESS 8.0
+* BRIGHTSTAREXCLUDEFROMBACKGROUNDRADIUS 0.30
+* ENERGYBINSIZE 0.05
+* ENERGYEFFECTIVEAREAS REC
+* ENERGYRECONSTRUCTIONMETHOD 1
+* DEADTIMECALCULATIONMETHOD 0
+* RATEINTERVALLLENGTH 4.
+========================================================
+        end reading run parameters                      
+========================================================
+
+Reading long run list from (S0, TA0): /raid/jacko/obriens/VERITAS/ED_data/analysis/Results/v490/BLLac/BLLac3//83768.anasum.runlist
+========================================
+========================================
+Random seed for stereo maps: 17
+
+File with list of runs  (long version): /raid/jacko/obriens/VERITAS/ED_data/analysis/Results/v490/BLLac/BLLac3//83768.anasum.runlist (file format version 6, 1 runs found in list)
+	 reading run parameter from mscw file (may take a second...)
+Run 83768:	 pointing from mscw file is  (ra,dec (J2000)) = (330.68, 42.2778)
+
+-----------------------------------------------------------------------(3)
+Chaining run 0 of 1 runs with source data: /raid/reedbuck/lundym/data/analysis/Results/v490///83768.mscw.root
+	 azimuth range: [-35.3642,-43.348]
+	 mean pedestal variations in run 83768: 5.87495
+-----------------------------------------------------------------------(4)
+Chaining run 0 of 1 runs with background data: /raid/reedbuck/lundym/data/analysis/Results/v490///83768.mscw.root
+	 azimuth range: [-35.3642,-43.348]
+	 mean pedestal variations in run 83768: 5.87495
+-----------------------------------------------------------------------(5)
+
+-----------------------------------------------------------------------
+Checking data trees (ON runs)
+	 Run 	| Start (MJD : secs)	| End (MJD : secs)	| Duration (secs [mins])
+	 83768	| 57711 : 7993.29	| 57711 : 8893.36	| 900.07 [15.00]
+
+-----------------------------------------------------------------------
+Defining targets and exclusion regions
+Run 83768 ---------------------------
+	Target: BL Lac (ra,dec)=(330.855, 42.3598) (precessed, MJD=57711.1), (ra,dec (J2000)) = (330.68, 42.2778)
+	Wobble offsets (currE): N: -0.5 W: -0,  RA 0, Dec -0.5
+	Wobble offsets (J2000): N: -0.5 W: 0.000541746
+	Sky maps centred at (ra,dec (J2000)) (330.68, 42.2778)
+	Telescopes pointing to: (ra,dec (J2000)) (330.68, 41.7778), N: -0.5 W: 0.000541746
+	1D-histograms calculated at (x,y): 0, -0
+	Wobble offsets (currE): N: -0.5 W: -0,  RA 0, Dec -0.5
+	reading star catalogue: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS/AstroData/Catalogues/Hipparcos_MAG8_1997.dat
+	bright stars (magnitude brighter than 8, exclusion radius 0.3 deg, B-band) in field of view (J2000): 
+		 ID 	 RA 	 Dec 	 magnitude 
+		108024	328.268	41.6033	7.656 (B band)    HIP108024
+		108356	329.275	42.6163	7.974 (B band)    HIP108356
+		108440	329.508	43.1497	7.909 (B band)    HIP108440
+		108450	329.546	43.2388	7.38 (B band)    HIP108450
+		108507	329.733	41.6962	7.53 (B band)    HIP108507
+		108614	330.046	42.5836	7.677 (B band)    HIP108614
+		108675	330.232	43.6351	7.962 (B band)    HIP108675
+		108819	330.685	42.8145	7.174 (B band)    HIP108819
+		109071	331.43	41.3523	7.664 (B band)    HIP109071
+		109238	331.954	42.9533	7.896 (B band)    HIP109238
+		109511	332.765	43.0307	7.869 (B band)    HIP109511
+
+-----------------------------------------------------------------------
+Checking data trees (OFF runs)
+	 Run 	| Start (MJD : secs)	| End (MJD : secs)	| Duration (secs [mins])
+	 83768	| 57711 : 7993.29	| 57711 : 8893.36	| 900.07 [15.00]
+
+
+---------------------------------------
+Stereo analysis for run: 83768	83768  (run 1 out of 1), eventdisplay version v.4.90
+	 Object: BL Lac
+	 Wobble: (N-0.5, W-0), sky maps centred at (ra,dec) (330.68, 42.2778), target shift: (N0, W-0) (RA/DEC)_J2000 [0, 0]
+	 region excluded from background estimation: 
+	       1:region to exclude: (N -0, W -0, R1 0.35, R2 0.35, theta 0, ID -1 )
+	       2:region to exclude: (N -0.64899, W -1.80389, R1 0.3, R2 0.3, theta 0, ID 108024 (HIP108024) )
+	       3:region to exclude: (N 0.347057, W -1.03438, R1 0.3, R2 0.3, theta 0, ID 108356 (HIP108356) )
+	       4:region to exclude: (N 0.877818, W -0.855207, R1 0.3, R2 0.3, theta 0, ID 108440 (HIP108440) )
+	       5:region to exclude: (N 0.966567, W -0.826103, R1 0.3, R2 0.3, theta 0, ID 108450 (HIP108450) )
+	       6:region to exclude: (N -0.577634, W -0.707774, R1 0.3, R2 0.3, theta 0, ID 108507 (HIP108507) )
+	       7:region to exclude: (N 0.307587, W -0.467007, R1 0.3, R2 0.3, theta 0, ID 108614 (HIP108614) )
+	       8:region to exclude: (N 1.35824, W -0.3246, R1 0.3, R2 0.3, theta 0, ID 108675 (HIP108675) )
+	       9:region to exclude: (N 0.536756, W 0.0032202, R1 0.3, R2 0.3, theta 0, ID 108819 (HIP108819) )
+	       10:region to exclude: (N -0.922965, W 0.562557, R1 0.3, R2 0.3, theta 0, ID 109071 (HIP109071) )
+	       11:region to exclude: (N 0.682501, W 0.932178, R1 0.3, R2 0.3, theta 0, ID 109238 (HIP109238) )
+	       12:region to exclude: (N 0.771675, W 1.52404, R1 0.3, R2 0.3, theta 0, ID 109511 (HIP109511) )
+	 number of telescopes: 4
+	 time intervall for rate plots: 240 s (4 min)
+	 effective areas from effArea-v490-auxv01-CARE_June2020-Cut-NTel3-PointSource-Hard-TMVA-BDT-AP-DISP-V6_2016_2017-ATM61-T1234.root
+	 sky plot binning [deg] 0.01	0.05
+	 sky plot size [deg]: -2 < X < 2, -2 < Y < 2
+	 energy spectra parameters (binsize, log10): 0.05 (use effective area A_REC), Method 1
+	 dead time calculation method: scalar method
+	 background model: REFLECTED REGIONS BACKGROUND MODEL
+	 theta2 cut: 0.008 deg2
+	 distance to source region: 0.1
+	 minimum number of off source regions: 2
+	 maximum number of off source regions: 6
+	 acceptance file (for theta2 plots): IGNOREACCEPTANCE
+	 maximum distance to camera center: 2 deg
+	 NBoxsmooth: 0
+
+
+------------------------------------------------------------------------
+Filling ON histograms for run 83768 -----------------------------
+	 time-mask initialised for run 83768 for 901 seconds starting at 7993.29 secs on MJD 57711
+	 setting time-mask from file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS/ParameterFiles/ANASUM.timemask_bllac3.dat
+	 -> user requests 60 secs closed starting at 660 seconds ...
+	 -> mask is open for 841 secs.
+	 reading analysis cuts from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronCutFiles/ANASUM.GammaHadron-Cut-NTel3-PointSource-Hard-TMVA-BDT.dat
+========================================
+VTMVAEvaluator::initializeWeightFiles: reading energy and zenith bins from TMVA root files (nbinE: 9, nbinZ: 3)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_0.root
+  assume this is a low-energy empty bin (bin number 0; number of missing energy bins: 1)
+  assume this is a zenith empty bin (bin number 0; number of missing zenith bins: 1)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_1.root
+  assume this is a zenith empty bin (bin number 1; number of missing zenith bins: 2)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_2.root
+  assume this is a zenith empty bin (bin number 2; number of missing zenith bins: 3)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1.25, -0.25], bin 1: Zen [0, 32.5], bin 0:	 10	0.151
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1.25, -0.25], bin 1: Zen [32.5, 47.5], bin 1:	 11	0.0918
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (1) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_2.root
+  assume this is a low-energy empty bin (bin number 1; number of missing energy bins: 2)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1, 0], bin 2: Zen [0, 32.5], bin 0:	 20	0.145
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1, 0], bin 2: Zen [32.5, 47.5], bin 1:	 21	0.137
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (2) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_2.root
+  assume this is a low-energy empty bin (bin number 2; number of missing energy bins: 3)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [0, 32.5], bin 0:	 30	0.153
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [32.5, 47.5], bin 1:	 31	0.153
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [47.5, 75], bin 2:	 32	0.101
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [0, 32.5], bin 0:	 40	0.159
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [32.5, 47.5], bin 1:	 41	0.159
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [47.5, 75], bin 2:	 42	0.047
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [0, 32.5], bin 0:	 50	0.127
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [32.5, 47.5], bin 1:	 51	0.164
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [47.5, 75], bin 2:	 52	0.113
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [0, 32.5], bin 0:	 60	0.101
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [32.5, 47.5], bin 1:	 61	0.152
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [47.5, 75], bin 2:	 62	0.129
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [0, 32.5], bin 0:	 70	0.0787
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [32.5, 47.5], bin 1:	 71	0.13
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [47.5, 75], bin 2:	 72	0.137
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [0, 32.5], bin 0:	 80	0.0799
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [32.5, 47.5], bin 1:	 81	0.0992
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [47.5, 75], bin 2:	 82	0.149
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0.root
+	 energy bin [-1.25,-0.25] (mean energy -0.75), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1.root
+	 energy bin [-1.25,-0.25] (mean energy -0.75), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0.root
+	 energy bin [-1,0] (mean energy -0.5), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1.root
+	 energy bin [-1,0] (mean energy -0.5), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0.root
+	 energy bin [-0.5,0.5] (mean energy 2.41082e-17), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1.root
+	 energy bin [-0.5,0.5] (mean energy 2.41082e-17), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2.root
+	 energy bin [-0.5,0.5] (mean energy 2.41082e-17), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [47.5,75]
+                         : Booking "1_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "1_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "2_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "2_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+VTMVAEvaluator: Initialized 22 MVA readers 
+
+======================= VTMVAEvaluator: signal (background) efficiency =======================
+E [-1.25,-0.250] TeV, Ze [0.00,32.5] deg (bin 0):	 0.792	(0.0455)	 MVACut: 0.151
+E [-1.25,-0.250] TeV, Ze [32.5,47.5] deg (bin 1):	 0.900	(0.0218)	 MVACut: 0.0918
+E [-1.00,0.00] TeV, Ze [0.00,32.5] deg (bin 2):	 0.781	(0.0482)	 MVACut: 0.145
+E [-1.00,0.00] TeV, Ze [32.5,47.5] deg (bin 3):	 0.828	(0.0393)	 MVACut: 0.137
+E [-0.750,0.250] TeV, Ze [0.00,32.5] deg (bin 4):	 0.757	(0.0400)	 MVACut: 0.153
+E [-0.750,0.250] TeV, Ze [32.5,47.5] deg (bin 5):	 0.780	(0.0325)	 MVACut: 0.153
+E [-0.750,0.250] TeV, Ze [47.5,75.0] deg (bin 6):	 0.779	(0.0521)	 MVACut: 0.101
+E [-0.500,0.500] TeV, Ze [0.00,32.5] deg (bin 7):	 0.729	(0.0331)	 MVACut: 0.159
+E [-0.500,0.500] TeV, Ze [32.5,47.5] deg (bin 8):	 0.755	(0.0281)	 MVACut: 0.159
+E [-0.500,0.500] TeV, Ze [47.5,75.0] deg (bin 9):	 0.893	(0.0867)	 MVACut: 0.0470
+E [-0.250,0.750] TeV, Ze [0.00,32.5] deg (bin 10):	 0.785	(0.0441)	 MVACut: 0.127
+E [-0.250,0.750] TeV, Ze [32.5,47.5] deg (bin 11):	 0.739	(0.0236)	 MVACut: 0.164
+E [-0.250,0.750] TeV, Ze [47.5,75.0] deg (bin 12):	 0.804	(0.0481)	 MVACut: 0.113
+E [0.00,1.00] TeV, Ze [0.00,32.5] deg (bin 13):	 0.843	(0.0497)	 MVACut: 0.101
+E [0.00,1.00] TeV, Ze [32.5,47.5] deg (bin 14):	 0.761	(0.0287)	 MVACut: 0.152
+E [0.00,1.00] TeV, Ze [47.5,75.0] deg (bin 15):	 0.769	(0.0379)	 MVACut: 0.129
+E [0.250,1.25] TeV, Ze [0.00,32.5] deg (bin 16):	 0.883	(0.0420)	 MVACut: 0.0787
+E [0.250,1.25] TeV, Ze [32.5,47.5] deg (bin 17):	 0.791	(0.0313)	 MVACut: 0.130
+E [0.250,1.25] TeV, Ze [47.5,75.0] deg (bin 18):	 0.759	(0.0279)	 MVACut: 0.137
+E [0.500,2.00] TeV, Ze [0.00,32.5] deg (bin 19):	 0.900	(0.0297)	 MVACut: 0.0799
+E [0.500,2.00] TeV, Ze [32.5,47.5] deg (bin 20):	 0.849	(0.0297)	 MVACut: 0.0992
+E [0.500,2.00] TeV, Ze [47.5,75.0] deg (bin 21):	 0.750	(0.0145)	 MVACut: 0.149
+
+-----------------------------------------------------------------------------------------
+VGammaHadronCuts::printCutSummary() (ntel=4: T1234) 
+Gamma/hadron cut selector: 42
+Instrument epoch selected: V6_2016_2017_ATM61
+Direction cuts (cut selector 0)
+Theta2 cut: Theta^2 [deg^2] < 0.008
+Direction cut scale factor 1, minimum : 0 [deg] , maximum : 1e+10 [deg]
+Average core distance < 400 m (max distance to telescopes (mintel) 1e+10 m)
+TMVA gamma/hadron separation with MVA method BDT
+weight files: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT (0,8) (0,2)
+
+Fiducial area (camera) < 2 deg,  stereo reconstruction: 0 <= sChi2 <= 1e+30
+Energy reconstruction: 0 <= EChi2 <= 1e+05, -99 < dE < 1e+12, 0 < Erec < 1e+10
+SizeSecondMax: 1.5e+03 < SizeSecondMax < 1e+30, 0 < Emission height < 1e+10
+NImage cut: 0 <= Ntel <= 100000
+Tel-combinations: 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 0, 10: 0, 11: 1, 12: 0, 13: 1, 14: 1, 15: 1
+-----------------------------------------------------------------------------------------
+	 reading dead time histograms from file /raid/reedbuck/lundym/data/analysis/Results/v490///83768.mscw.root:/deadTimeHistograms
+
+	 reading effective areas from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//EffectiveAreas/effArea-v490-auxv01-CARE_June2020-Cut-NTel3-PointSource-Hard-TMVA-BDT-AP-DISP-V6_2016_2017-ATM61-T1234.root
+	 selecting effective areas for mean az -39.4 deg, spectral index 3.5, noise level 5.87
+		total number of curves: 302940, total number of bins on energy axis: 60
+		 number of az bin: 16
+	 use histograms for effective areas (number of zenith angle intervals: 9; 0, 20, 30, 35, 40, 45, 50, 55, 60)
+	 (effective area vs reconstructed energy)
+	 number of entries for this run: 131462
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+	 filling ON events... (correlated maps)
+	 filling ON events... (uncorrelated maps)
+                         : Rebuilding Dataset Default
+	 Tdiff: dead time [ms] 0.278, fraction of missing events: 12.7% (0, 3.62e+05)
+	 Scalar: dead time (fraction of missing events): 13.9% (Chi2 = 7.76e+03)
+
+	 Time mask for run: 83768
+	 Run ( 901 secs) | Interval (100 secs)	|     0 |     1 |     2 |     3 |     4 |     5 |     6 |     7 |     8 |     9 (1 sec)
+	             841 | Open (secs)		|   100 |   100 |   100 |   100 |   100 |   100 |    60 |    80 |   100 |     1
+	            0.93 | Open Fraction	|  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  0.60 |  0.80 |  1.00 |  1.00
+	          131461 | Total Events		| 14450 | 14773 | 14664 | 14627 | 14646 | 14617 | 14564 | 14716 | 14392 |    12
+	          122667 | Accepted Events	| 14450 | 14773 | 14664 | 14627 | 14646 | 14617 |  8714 | 11772 | 14392 |    12
+	            0.93 | Accepted Fraction	|  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  0.60 |  0.80 |  1.00 |  1.00
+
+	 Mean times from time mask for run (start on MJD):	 83768	 (7.99e+03 secs on 57711)
+	 Mean of run:			  450.5	 (8443.79)
+	 Mean of events:		449.561	 (8442.86)
+	 Mean of mask:			433.413	 (8426.71)
+	 Mean of accepted events:	432.335	 (8425.63)
+
+------------------------------------------------------------------------
+Filling OFF histograms for run 83768 -----------------------------
+	 time-mask initialised for run 83768 for 901 seconds starting at 7.99e+03 secs on MJD 57711
+	 setting time-mask from file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS/ParameterFiles/ANASUM.timemask_bllac3.dat
+	 -> user requests 60 secs closed starting at 660 seconds ...
+	 -> mask is open for 841 secs.
+	 reading analysis cuts from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronCutFiles/ANASUM.GammaHadron-Cut-NTel3-PointSource-Hard-TMVA-BDT.dat
+========================================
+VTMVAEvaluator::initializeWeightFiles: reading energy and zenith bins from TMVA root files (nbinE: 9, nbinZ: 3)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_0.root
+  assume this is a low-energy empty bin (bin number 0; number of missing energy bins: 1)
+  assume this is a zenith empty bin (bin number 0; number of missing zenith bins: 1)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_1.root
+  assume this is a zenith empty bin (bin number 1; number of missing zenith bins: 2)
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (0) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_0_2.root
+  assume this is a zenith empty bin (bin number 2; number of missing zenith bins: 3)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1.25, -0.25], bin 1: Zen [0, 32.5], bin 0:	 10	0.151
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1.25, -0.25], bin 1: Zen [32.5, 47.5], bin 1:	 11	0.0918
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (1) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_2.root
+  assume this is a low-energy empty bin (bin number 1; number of missing energy bins: 2)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1, 0], bin 2: Zen [0, 32.5], bin 0:	 20	0.145
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-1, 0], bin 2: Zen [32.5, 47.5], bin 1:	 21	0.137
+  No signal efficiency histogram found (Method_BDT/BDT_0/MVA_BDT_0_effS)
+VTMVAEvaluator::initializeWeightFiles() warning: TMVA root file not found or incomplete file (2) 
+/raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_2.root
+  assume this is a low-energy empty bin (bin number 2; number of missing energy bins: 3)
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [0, 32.5], bin 0:	 30	0.153
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [32.5, 47.5], bin 1:	 31	0.153
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.75, 0.25], bin 3: Zen [47.5, 75], bin 2:	 32	0.101
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [0, 32.5], bin 0:	 40	0.159
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [32.5, 47.5], bin 1:	 41	0.159
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.5, 0.5], bin 4: Zen [47.5, 75], bin 2:	 42	0.047
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [0, 32.5], bin 0:	 50	0.127
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [32.5, 47.5], bin 1:	 51	0.164
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [-0.25, 0.75], bin 5: Zen [47.5, 75], bin 2:	 52	0.113
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [0, 32.5], bin 0:	 60	0.101
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [32.5, 47.5], bin 1:	 61	0.152
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0, 1], bin 6: Zen [47.5, 75], bin 2:	 62	0.129
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [0, 32.5], bin 0:	 70	0.0787
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [32.5, 47.5], bin 1:	 71	0.13
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.25, 1.25], bin 7: Zen [47.5, 75], bin 2:	 72	0.137
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [0, 32.5], bin 0:	 80	0.0799
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [32.5, 47.5], bin 1:	 81	0.0992
+VTMVAEvaluator::getValueFromMap (MVA_CUT): E [0.5, 2], bin 8: Zen [47.5, 75], bin 2:	 82	0.149
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0.root
+	 energy bin [-1.25,-0.25] (mean energy -0.75), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1.root
+	 energy bin [-1.25,-0.25] (mean energy -0.75), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0.root
+	 energy bin [-1,0] (mean energy -0.5), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1.root
+	 energy bin [-1,0] (mean energy -0.5), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2.root
+	 energy bin [-0.75,0.25] (mean energy -0.25), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0.root
+	 energy bin [-0.5,0.5] (mean energy 2.41e-17), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1.root
+	 energy bin [-0.5,0.5] (mean energy 2.41e-17), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2.root
+	 energy bin [-0.5,0.5] (mean energy 2.41e-17), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2.root
+	 energy bin [-0.25,0.75] (mean energy 0.25), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2.root
+	 energy bin [0,1] (mean energy 0.5), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2.root
+	 energy bin [0.25,1.25] (mean energy 0.75), zenith bin [47.5,75]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [0,32.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [32.5,47.5]
+	 file /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2.root
+	 energy bin [0.5,2] (mean energy 1.25), zenith bin [47.5,75]
+                         : Booking "1_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "1_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_1_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "2_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "2_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_2_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "3_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_3_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "4_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_4_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "5_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_5_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "6_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_6_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "7_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_7_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_0" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_0_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_1" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_1_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+                         : Booking "8_2" of type "BDT" from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2_BDT_0.weights.xml.
+                         : Reading weight file: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT_8_2_BDT_0.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT_0" of type: "BDT"
+VTMVAEvaluator: Initialized 22 MVA readers 
+
+======================= VTMVAEvaluator: signal (background) efficiency =======================
+E [-1.25,-0.250] TeV, Ze [0.00,32.5] deg (bin 0):	 0.792	(0.0455)	 MVACut: 0.151
+E [-1.25,-0.250] TeV, Ze [32.5,47.5] deg (bin 1):	 0.900	(0.0218)	 MVACut: 0.0918
+E [-1.00,0.00] TeV, Ze [0.00,32.5] deg (bin 2):	 0.781	(0.0482)	 MVACut: 0.145
+E [-1.00,0.00] TeV, Ze [32.5,47.5] deg (bin 3):	 0.828	(0.0393)	 MVACut: 0.137
+E [-0.750,0.250] TeV, Ze [0.00,32.5] deg (bin 4):	 0.757	(0.0400)	 MVACut: 0.153
+E [-0.750,0.250] TeV, Ze [32.5,47.5] deg (bin 5):	 0.780	(0.0325)	 MVACut: 0.153
+E [-0.750,0.250] TeV, Ze [47.5,75.0] deg (bin 6):	 0.779	(0.0521)	 MVACut: 0.101
+E [-0.500,0.500] TeV, Ze [0.00,32.5] deg (bin 7):	 0.729	(0.0331)	 MVACut: 0.159
+E [-0.500,0.500] TeV, Ze [32.5,47.5] deg (bin 8):	 0.755	(0.0281)	 MVACut: 0.159
+E [-0.500,0.500] TeV, Ze [47.5,75.0] deg (bin 9):	 0.893	(0.0867)	 MVACut: 0.0470
+E [-0.250,0.750] TeV, Ze [0.00,32.5] deg (bin 10):	 0.785	(0.0441)	 MVACut: 0.127
+E [-0.250,0.750] TeV, Ze [32.5,47.5] deg (bin 11):	 0.739	(0.0236)	 MVACut: 0.164
+E [-0.250,0.750] TeV, Ze [47.5,75.0] deg (bin 12):	 0.804	(0.0481)	 MVACut: 0.113
+E [0.00,1.00] TeV, Ze [0.00,32.5] deg (bin 13):	 0.843	(0.0497)	 MVACut: 0.101
+E [0.00,1.00] TeV, Ze [32.5,47.5] deg (bin 14):	 0.761	(0.0287)	 MVACut: 0.152
+E [0.00,1.00] TeV, Ze [47.5,75.0] deg (bin 15):	 0.769	(0.0379)	 MVACut: 0.129
+E [0.250,1.25] TeV, Ze [0.00,32.5] deg (bin 16):	 0.883	(0.0420)	 MVACut: 0.0787
+E [0.250,1.25] TeV, Ze [32.5,47.5] deg (bin 17):	 0.791	(0.0313)	 MVACut: 0.130
+E [0.250,1.25] TeV, Ze [47.5,75.0] deg (bin 18):	 0.759	(0.0279)	 MVACut: 0.137
+E [0.500,2.00] TeV, Ze [0.00,32.5] deg (bin 19):	 0.900	(0.0297)	 MVACut: 0.0799
+E [0.500,2.00] TeV, Ze [32.5,47.5] deg (bin 20):	 0.849	(0.0297)	 MVACut: 0.0992
+E [0.500,2.00] TeV, Ze [47.5,75.0] deg (bin 21):	 0.750	(0.0145)	 MVACut: 0.149
+
+-----------------------------------------------------------------------------------------
+VGammaHadronCuts::printCutSummary() (ntel=4: T1234) 
+Gamma/hadron cut selector: 42
+Instrument epoch selected: V6_2016_2017_ATM61
+Direction cuts (cut selector 0)
+Theta2 cut: Theta^2 [deg^2] < 0.008
+Direction cut scale factor 1, minimum : 0 [deg] , maximum : 1e+10 [deg]
+Average core distance < 400 m (max distance to telescopes (mintel) 1e+10 m)
+TMVA gamma/hadron separation with MVA method BDT
+weight files: /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//GammaHadronBDTs/V6_2016_2017_ATM61/NTel3-Hard/BDT (0,8) (0,2)
+
+Fiducial area (camera) < 2 deg,  stereo reconstruction: 0 <= sChi2 <= 1e+30
+Energy reconstruction: 0 <= EChi2 <= 1e+05, -99 < dE < 1e+12, 0 < Erec < 1e+10
+SizeSecondMax: 1.5e+03 < SizeSecondMax < 1e+30, 0 < Emission height < 1e+10
+NImage cut: 0 <= Ntel <= 100000
+Tel-combinations: 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 1, 8: 0, 9: 0, 10: 0, 11: 1, 12: 0, 13: 1, 14: 1, 15: 1
+-----------------------------------------------------------------------------------------
+	 reading dead time histograms from file /raid/reedbuck/lundym/data/analysis/Results/v490///83768.mscw.root:/deadTimeHistograms
+	 reading effective areas from /raid/jacko/obriens/EDv490/Eventdisplay_AnalysisFiles_VTS//EffectiveAreas/effArea-v490-auxv01-CARE_June2020-Cut-NTel3-PointSource-Hard-TMVA-BDT-AP-DISP-V6_2016_2017-ATM61-T1234.root
+	 selecting effective areas for mean az -39.4 deg, spectral index 3.5, noise level 5.87
+		total number of curves: 302940, total number of bins on energy axis: 60
+		 number of az bin: 16
+	 use histograms for effective areas (number of zenith angle intervals: 9; 0, 20, 30, 35, 40, 45, 50, 55, 60)
+	 (effective area vs reconstructed energy)
+	 number of entries for this run: 131462
+                         : Rebuilding Dataset Default
+	 filling OFF events... (correlated maps)
+	 initialize REFLECTED REGION MODEL for run 83768
+		 ....reflected regions initialized
+	 filling OFF events... (uncorrelated maps)
+	 initialize REFLECTED REGION MODEL for run 83768 (uncorrelated plots)
+		 ....reflected regions initialized
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+                         : Rebuilding Dataset Default
+	 Tdiff: dead time [ms] 0.278, fraction of missing events: 12.7% (0, 3.62e+05)
+	 Scalar: dead time (fraction of missing events): 13.9% (Chi2 = 7.76e+03)
+
+	 Time mask for run: 83768
+	 Run ( 901 secs) | Interval (100 secs)	|     0 |     1 |     2 |     3 |     4 |     5 |     6 |     7 |     8 |     9 (1 sec)
+	             841 | Open (secs)		|   100 |   100 |   100 |   100 |   100 |   100 |    60 |    80 |   100 |     1
+	            0.93 | Open Fraction	|  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  0.60 |  0.80 |  1.00 |  1.00
+	          131461 | Total Events		| 14450 | 14773 | 14664 | 14627 | 14646 | 14617 | 14564 | 14716 | 14392 |    12
+	          122667 | Accepted Events	| 14450 | 14773 | 14664 | 14627 | 14646 | 14617 |  8714 | 11772 | 14392 |    12
+	            0.93 | Accepted Fraction	|  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  1.00 |  0.60 |  0.80 |  1.00 |  1.00
+
+	 Mean times from time mask for run (start on MJD):	 83768	 (7.99e+03 secs on 57711)
+	 Mean of run:			  450.5	 (8443.79)
+	 Mean of events:		449.561	 (8442.86)
+	 Mean of mask:			433.413	 (8426.71)
+	 Mean of accepted events:	432.335	 (8425.63)
+
+Mean properties for this pair: ON=83768, OFF=83768 -----------------------------
+	 Exposure ON=841 secs (14 min)  OFF=841 secs (14 min),	 Az range ON [-35.4,-43.3], OFF [-35.4,-43.3]
+	 mean elevation: 0 (ON), 75.7 (OFF)
+	 mean azimuth: -39.4 (ON), -39.4 (OFF)
+	 trigger rate : 146 Hz (ON), 146 Hz (Off)
+	 Maximum in CORRELATED maps: 
+	 3.417 (On: 3, Off: 0, Alpha: 0.1667, Off/Alpha: 0) at (x=-1.02, y=-1.63)
+	 Maximum in UNCORRELATED maps: 
+	 2.344 (On: 1, Off: 1, Alpha: 0.01658, Off/Alpha: 0.01658) at (x=-1.7, y=-0.2)
+
+	 ---------------------------- 
+	 RESULTS FOR SOURCE POSITION: 
+	 ---------------------------- 
+	 ON:0  OFF:0.5 (off 3, alpha=0.1667)
+	 -0.9617 Sigma  -0.03567+/-0.0206 gammas/min
+	 background rate: 0.03567 CR/min
+
+---------------------------------------
+
+---------------------------------------
+Stereo analysis for all runs:
+	 Exposure ON=841 secs (14.02 min)  OFF=841 secs (14.02 min),	 Az range ON [0,0], OFF [0,0]
+	 mean elevation: 75.71 (ON), 75.71 (OFF)
+	 trigger rate : 145.9 Hz (ON), 145.9 Hz (Off)
+	 mean pedvars: 5.875 (ON), 5.875 (OFF)
+	 Maximum in CORRELATED maps: 
+	 3.417 (On: 3, Off: 0, Alpha: 0.1667, Off/Alpha: 0) at (x=-1.02, y=-1.63)
+	 Maximum in UNCORRELATED maps: 
+	 2.344 (On: 1, Off: 1, Alpha: 0.01658, Off/Alpha: 0.01658) at (x=-1.7, y=-0.2)
+
+	 ---------------------------- 
+	 RESULTS FOR SOURCE POSITION: 
+	 ---------------------------- 
+	 ON:0  OFF:0.5 (off 3, alpha=0.1667)
+	 -0.9617 Sigma  -0.03567+/-0.0206 gammas/min
+	 background rate: 0.03567 CR/min
+
+---------------------------------------
+
+
+RUN SUMMARY: 
+
+RUN 83768 (-0.5N,+0.0W)  at 75, -39 deg El., Az, 14.02 min, Non:    0, Noff:  0.50 (   3, norm 0.167),  -1.0 sigma, Rates:  -0.036 +/-   0.021 gamma/min (background:   0.036 events/min)
+
+-----------------------------------------------------------------------------(6)
+ALL RUNS (1 runs) at 75, -40 deg El., Az, 14.02 min, Non:    0, Noff:  0.50 (   3, norm 0.167),  -1.0 sigma, Rates:  -0.036 +/-   0.021 gamma/min (background:   0.036 events/min)
+
+analysis results written to /raid/jacko/obriens/VERITAS/ED_data/analysis/Results/v490/BLLac/BLLac3//83768.anasum.root
