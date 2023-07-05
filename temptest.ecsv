@@ -1,0 +1,20 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: time_min, datatype: float64}
+# - {name: time_max, datatype: float64}
+# - {name: e_ref, unit: TeV, datatype: string, subtype: 'float64[1]'}
+# - {name: e_min, unit: TeV, datatype: string, subtype: 'float64[1]'}
+# - {name: e_max, unit: TeV, datatype: string, subtype: 'float64[1]'}
+# - {name: flux, unit: 1 / (m2 s), datatype: string, subtype: 'float64[1]'}
+# - {name: flux_err, unit: 1 / (m2 s), datatype: string, subtype: 'float64[1]'}
+# - {name: ts, unit: '', datatype: string, subtype: 'float64[1]'}
+# - {name: sqrt_ts, unit: '', datatype: string, subtype: 'float64[1]'}
+# - {name: npred, unit: '', datatype: string, subtype: 'float64[1,44]'}
+# - {name: npred_excess, unit: '', datatype: string, subtype: 'float64[1,44]'}
+# - {name: stat, unit: '', datatype: string, subtype: 'float64[1]'}
+# - {name: is_ul, datatype: string, subtype: 'bool[1]'}
+# - {name: counts, unit: '', datatype: string, subtype: 'float64[1,44]'}
+# - {name: success, unit: '', datatype: string, subtype: 'bool[1]'}
+# schema: astropy-2.0
+time_min time_max e_ref e_min e_max flux flux_err ts sqrt_ts npred npred_excess stat is_ul counts success
